@@ -76,8 +76,8 @@ toGovern();
 
 function replaceH() {
   "use strict";
-    let elementH = document.getElementsByTagName("h3")[0];
-    elementH.outerHTML = "<h1>NEW LIST HEADER</h1>";
+  let elementH = document.getElementsByTagName("h3")[0];
+  elementH.outerHTML = "<h1>NEW LIST HEADER</h1>";
     //let elementNewH = document.getElementsByTagName("h1")[0];
     //console.log(elementH.innerText, ":  tag-", elementH.nodeName)
     //console.log(elementNewH.innerText, ":  tag-", elementNewH.nodeName)  
@@ -90,16 +90,16 @@ function replaceH() {
 ///////////////////////////////////////////////////////////////////
 
 function receiveDate() {
-"use strict";
-let day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-let mon = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
-let myDate = new Date();
-let flowingDate = day[myDate.getDay()] + " " + mon[myDate.getMonth()] + " " + myDate.getDate() + " " + myDate.getFullYear();
-// console.log(flowingDate);
-// const nav = document.querySelector(`nav`);
-const nav = document.getElementById("navbar");
-nav.innerHTML = flowingDate;
-nav.setAttribute("style", "color: grey;");
+  "use strict";
+  let day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  let mon = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
+  let myDate = new Date();
+  let flowingDate = day[myDate.getDay()] + " " + mon[myDate.getMonth()] + " " + myDate.getDate() + " " + myDate.getFullYear();
+  // console.log(flowingDate);
+  // const nav = document.querySelector(`nav`);
+  const nav = document.getElementById("navbar");
+  nav.innerHTML = flowingDate;
+  nav.setAttribute("style", "color: grey;");
 };
 //window.onload = receiveDate;
 
